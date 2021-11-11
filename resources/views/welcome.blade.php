@@ -57,7 +57,7 @@
 
                         @if($errors->has('msg'))
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                            <strong>Login Gagal!</strong>
+                            <strong>Login Gagal!</strong> {{$errors->first('msg')}}.
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                         @endif
